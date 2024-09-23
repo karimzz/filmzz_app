@@ -57,7 +57,7 @@ export default function MovieScreen() {
         <View>
             <Image className="" source={require("../assets/fim.jpg")}  style={{width , height :height * .43}} />
             <LinearGradient 
-            colors={["transparent" , "rgba(23,23,23,.8)" , "rgba(23,23,23, 1)"]}
+            colors={["transparent" , "rgba(23,23,23,.2)" , "rgba(23,23,23, 1)"]}
             style={{width , height : height * .55}}
             start={{x : .5 ,y : 0}}
             end={{x : .5 , y :1}}

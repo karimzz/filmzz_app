@@ -5,6 +5,7 @@ import HomeScreen from '../Screens/HomeScreen';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import MovieScreen from '../Screens/MovieScreen';
 import PersonScreen from '../Screens/PersonScreen';
+import SearchScreen from '../Screens/SearchScreen';
 
 export default function AppNavigation() {
 
@@ -20,6 +21,7 @@ export default function AppNavigation() {
                 <Stack.Screen name="home" component={HomeScreen} />
                 <Stack.Screen name="movie" component={MovieScreen} />
                 <Stack.Screen name="person" component={PersonScreen} />
+                <Stack.Screen name="search" component={SearchScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     </GestureHandlerRootView>
