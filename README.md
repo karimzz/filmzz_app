@@ -1,5 +1,5 @@
 # How to use This Project 
-1 - install Node Module (npm i) br
+1 - install Node Module (npm i)
 2 - expo start 
 3 - open project in Android Studio or Scan QR with Mobile
 
