@@ -3,11 +3,12 @@ import React, { useMemo, useState }  from 'react'
 import Carousel from 'react-native-reanimated-carousel'
 import MovieCard from './MovieCard'
 import { useNavigation } from '@react-navigation/native';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 
 
 export default function TrendingMovies({data}) {
+
+
 
   const window = Dimensions.get('window');
 const PAGE_WIDTH = window.width;
@@ -70,7 +71,7 @@ const PAGE_WIDTH = window.width;
         height={210}
         autoPlay={autoPlay}
         autoPlayReverse={autoPlayReverse}
-        data={[...Array(6).keys()]}
+        data={data}
         animationConfig={animationConfig}
         renderItem={({item}) => <MovieCard item={item} handleClick={handleClick} />}
     />

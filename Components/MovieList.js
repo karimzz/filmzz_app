@@ -3,6 +3,7 @@ import React from 'react'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import { styles } from '../Utils/Utils'
 import { useNavigation } from '@react-navigation/native'
+import { ImageBase185 } from '../Api/MovieDB'
 
 export default function MovieList({title ,data , hideSeeAll}) {
 
@@ -11,6 +12,7 @@ export default function MovieList({title ,data , hideSeeAll}) {
 
   // For Calculate Dimensions
   const {width , height} = Dimensions.get("window") ; 
+
 
   return (
     <View className="mb-8 space-y-4">
@@ -28,11 +30,11 @@ export default function MovieList({title ,data , hideSeeAll}) {
         >
           {
             data.map((item , idx)=>{
-              return (
+              return ( 
                 <TouchableWithoutFeedback onPress={()=>navigate.push('movie' , item)} key={idx} >
                     <View className="space-y-1 mr-4">
-                      <Image className="rounded-3xl" style={{width:width * .33, height : height *.22}} source={require("./../assets/fim.jpg")} />
-                      <Text className="text-neutral-300 ml-1">Movie Name</Text>
+                      <Image className="rounded-3xl" style={{width:width * .33, height : height *.22}} source={{uri : ImageBase185(item.poster_path)}} />
+                      <Text className="text-neutral-300 ml-1">{item.original_title ? item.original_title.length >14 ?item.original_title.slice(0,8) : item.original_title  : ""} </Text>
                     </View>
                 </TouchableWithoutFeedback>
               )

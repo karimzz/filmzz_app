@@ -1,4 +1,4 @@
-import { View, Text, Dimensions } from 'react-native' ; 
+import { View, Dimensions } from 'react-native' ; 
 import * as Progress from 'react-native-progress';
 
 import React from 'react';
