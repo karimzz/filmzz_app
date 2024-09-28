@@ -1,7 +1,9 @@
 # How to use This Project 
-1 - install Node Module (npm i) 
+1 - install Node Module (npm i) br
 2 - expo start 
 3 - open project in Android Studio or Scan QR with Mobile
+
+
 
 # Libarieies Used In :
 1 - React Navigation
